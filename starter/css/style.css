@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -18,6 +19,45 @@ h6 {
   margin: 0;
 }
 
+h1{
+  color: black;
+  width: 25%;
+  font-weight: 500px;
+  margin: 0px 0px 10px 30px;
+  background-color: rgba(146,204,205,255);
+  text-align: right;
+  font-size: 35px;
+  padding-right: 10px;
+}
+
 p {
   margin: 0;
 }
+
+nav{
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(49,52,61,255);
+  height: 80px;
+}
+
+nav a{
+  color: white;
+  font-size: medium;
+  padding-right: 20px;
+  font-size: 20px;
+
+}
+
+#navbar{
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+
+
