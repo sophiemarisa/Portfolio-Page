@@ -46,7 +46,7 @@ nav a{
   color: white;
   font-size: medium;
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 25px;
 
 }
 
@@ -57,6 +57,28 @@ nav a{
   justify-content: flex-end;
 }
 
+.hero-banner{
+  display: block;
+  background-image: url("../images/pngwing.com\ \(1\).png");
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+}
+
+.hero-banner h2{
+  background-color: rgba(146,204,205,255);
+  width: fit-content;
+  padding: 5px;
+  font-size: 40px;
+  position: absolute;
+  right: 40px;
+  bottom:20px;
+
+}
 
 
 
