@@ -80,6 +80,27 @@ nav a{
 
 }
 
+#AboutMeGrid{
+  margin: 0px 5%;
+  display: grid;
+  height: 200px;
+  grid-template-rows: 100%;
+  grid-template-columns: 25% 75%;
+  grid-template-areas: 
+    "title textArea"
+  ;
+}
+
+#aboutmetitle{
+  grid-area: title;
+  border-right: 2px black solid;
+  border-color: black;
+}
+
+#aboutmetext{
+  grid-area: textArea;
+}
+
 
 
 
