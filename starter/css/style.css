@@ -30,8 +30,21 @@ h1{
   padding-right: 10px;
 }
 
+h3{
+  font-size: 50px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+h4{
+  padding-left: 30px;
+  margin-bottom: 30px;
+  background-color: rgb(59, 173, 177);
+
+}
+
 p {
-  margin: 0;
+  font-size: 20px;
 }
 
 nav{
@@ -80,6 +93,83 @@ nav a{
 
 }
 
+#AboutMeGrid{
+  margin: 0px 5%;
+  margin-top: 30px;
+  display: grid;
+  height: 200px;
+  grid-template-rows: 100%;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+    "title textArea"
+  ;
+}
 
+#aboutmetitle{
+  grid-area: title;
+}
+
+#aboutmetext{
+  grid-area: textArea;
+}
+
+.title{
+  border-right: 5px black solid;
+  border-color: rgb(59, 173, 177);
+  color: rgb(59, 173, 177);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.text{
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+#PortfolioGrid{
+  margin: 0px 5%;
+  margin-top: 40px;
+  display: grid;
+  height: 800px;
+  grid-template-rows: 50% 25% 25%;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-areas: 
+    "title workitem1 workitem1"
+    "title workitem2 workitem3"
+    "title workitem4 workitem5"
+  ;
+}
+
+#workTitle{
+  grid-area: title;
+}
+
+#workItem1{
+  grid-area: workitem1;
+}
+#workItem2{
+  grid-area: workitem2;
+}
+#workItem3{
+  grid-area: workitem3;
+}
+#workItem4{
+  grid-area: workitem4;
+}
+#workItem5{
+  grid-area: workitem5;
+}
+.workItem{
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  border: rgb(59, 173, 177) solid 2px;
+}
 
 
