@@ -1,6 +1,11 @@
+:root{
+  --primary-colur:  rgba(146,204,205,255);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(49,52,61,255);
 }
 
 body {
@@ -24,7 +29,7 @@ h1{
   width: 25%;
   font-weight: 500px;
   margin: 0px 0px 10px 30px;
-  background-color: rgba(146,204,205,255);
+  background-color: var(--primary-colur);
   text-align: right;
   font-size: 35px;
   padding-right: 10px;
@@ -41,7 +46,7 @@ h3{
 h4{
   padding-left: 30px;
   margin-bottom: 30px;
-  background-color: rgb(59, 173, 177);
+  background-color: var(--primary-colur);
 
 }
 
@@ -68,7 +73,7 @@ nav a{
 }
 
 a:hover {
-  background-color: rgba(146,204,205,255);
+  background-color: var(--primary-colur);
   color: black;
 }
 
@@ -94,12 +99,11 @@ a:hover {
   height: 250px;
   width: auto;
   border-radius: 50%;
-  border: 3px solid rgba(146,204,205,255);
-  margin-left: 10px;
+  border: 3px solid var(--primary-colur);
 }
 
 .hero-banner h2{
-  background-color: rgba(146,204,205,255);
+  background-color: var(--primary-colur);
   width: fit-content;
   padding: 5px;
   font-size: 40px;
@@ -129,10 +133,14 @@ a:hover {
   grid-area: textArea;
 }
 
+.text p{
+  color: var(--primary-colur);
+}
+
 .title{
   border-right: 5px black solid;
-  border-color: rgb(59, 173, 177);
-  color: rgb(59, 173, 177);
+  border-color: var(--primary-colur);
+  color: var(--primary-colur);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -165,6 +173,7 @@ a:hover {
 
 #workItem1{
   grid-area: workitem1;
+  background-image: url(../images/css-cheat-sheet.png);
 }
 #workItem2{
   grid-area: workitem2;
@@ -186,7 +195,7 @@ a:hover {
   cursor: pointer;
   display: grid;
   align-content: end;
-  border: rgb(59, 173, 177) solid 2px;
+  border: var(--primary-colur) solid 2px;
 }
 
 #workItem1, #workItem2, #workItem4{
@@ -199,7 +208,7 @@ a:hover {
   height: 25px;
   color: white;
   font-size: 18px;
-  border-bottom: 5px solid rgb(59, 173, 177);
+  border-bottom: 5px solid var(--primary-colur);
   padding-bottom: 30px;
 }
 
