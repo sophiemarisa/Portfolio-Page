@@ -1,6 +1,55 @@
+@media only screen and (max-width: 1200px) {
+
+  nav h1{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar{
+    visibility: hidden;
+  }
+  nav h1{
+    font-size: 20px;
+  }
+  .hero-banner img{
+    visibility: hidden;
+  }
+  .title h3{
+    font-size: 40px;
+  }
+  #AboutMeGrid{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar{
+    visibility: hidden;
+  }
+  nav h1{
+    font-size: 20px;
+  }
+  .hero-banner img{
+    visibility: hidden;
+  }
+  .title h3{
+    font-size:25px;
+  }
+  #AboutMeGrid{
+    height: 400%;
+  }
+}
+
+
+:root{
+  --primary-colur:  rgba(146,204,205,255);
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgba(49,52,61,255);
 }
 
 body {
@@ -24,10 +73,12 @@ h1{
   width: 25%;
   font-weight: 500px;
   margin: 0px 0px 10px 30px;
-  background-color: rgba(146,204,205,255);
+  background-color: var(--primary-colur);
   text-align: right;
   font-size: 35px;
   padding-right: 10px;
+  position:absolute;
+  left: 0px;
 }
 
 h3{
@@ -39,7 +90,7 @@ h3{
 h4{
   padding-left: 30px;
   margin-bottom: 30px;
-  background-color: rgb(59, 173, 177);
+  background-color: var(--primary-colur);
 
 }
 
@@ -51,6 +102,8 @@ nav{
   padding-top: 15px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
   background-color: rgba(49,52,61,255);
   height: 80px;
 }
@@ -58,9 +111,14 @@ nav{
 nav a{
   color: white;
   font-size: medium;
-  padding-right: 20px;
+  margin-right: 20px;
   font-size: 25px;
 
+}
+
+a:hover {
+  background-color: var(--primary-colur);
+  color: black;
 }
 
 #navbar{
@@ -77,13 +135,19 @@ nav a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
   position: relative;
 
 }
 
+#ProfilePic{
+  height: 250px;
+  width: auto;
+  border-radius: 50%;
+  border: 3px solid var(--primary-colur);
+}
+
 .hero-banner h2{
-  background-color: rgba(146,204,205,255);
+  background-color: var(--primary-colur);
   width: fit-content;
   padding: 5px;
   font-size: 40px;
@@ -113,10 +177,14 @@ nav a{
   grid-area: textArea;
 }
 
+.text p{
+  color: var(--primary-colur);
+}
+
 .title{
   border-right: 5px black solid;
-  border-color: rgb(59, 173, 177);
-  color: rgb(59, 173, 177);
+  border-color: var(--primary-colur);
+  color: var(--primary-colur);
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
@@ -149,6 +217,7 @@ nav a{
 
 #workItem1{
   grid-area: workitem1;
+  background-image: url(../images/css-cheat-sheet.png);
 }
 #workItem2{
   grid-area: workitem2;
@@ -162,14 +231,71 @@ nav a{
 #workItem5{
   grid-area: workitem5;
 }
+
 .workItem{
-  margin-left: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  display: flex;
-  justify-content: space-evenly;
-  border: rgb(59, 173, 177) solid 2px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+  border: var(--primary-colur) solid 2px;
 }
+
+#workItem1, #workItem2, #workItem4{
+  margin-left: 30px;
+}
+
+.heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid var(--primary-colur);
+  padding-bottom: 30px;
+}
+
+#ContactMeGrid{
+  margin: 0px 5%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: grid;
+  height: 200px;
+  grid-template-rows: 100%;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+    "title textArea"
+  ;
+}
+
+#contactmetitle{
+  grid-area: title;
+}
+
+#contactmetext{
+  grid-area: textArea;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contact a{
+  color: var(--primary-colur);
+  font-size: medium;
+  margin-right: 70px;
+  font-size: 50px;
+  display: inline;
+  justify-content: space-between;
+}
+
+.contact a:hover{
+  background-color: white;
+  color: black;
+}
+
 
 
