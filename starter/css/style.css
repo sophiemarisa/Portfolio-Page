@@ -1,3 +1,47 @@
+@media only screen and (max-width: 1200px) {
+
+  nav h1{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #navbar{
+    visibility: hidden;
+  }
+  nav h1{
+    font-size: 20px;
+  }
+  .hero-banner img{
+    visibility: hidden;
+  }
+  .title h3{
+    font-size: 40px;
+  }
+  #AboutMeGrid{
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar{
+    visibility: hidden;
+  }
+  nav h1{
+    font-size: 20px;
+  }
+  .hero-banner img{
+    visibility: hidden;
+  }
+  .title h3{
+    font-size:25px;
+  }
+  #AboutMeGrid{
+    height: 400%;
+  }
+}
+
+
 :root{
   --primary-colur:  rgba(146,204,205,255);
 }
