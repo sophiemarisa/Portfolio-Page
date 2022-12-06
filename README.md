@@ -1,4 +1,4 @@
-#Portfolio Page 
+# Portfolio Page 
 
 ![Screenshot of first half of the website](/images/websnip1.png)
 ![Screenshot of first half of the website](/images/websnip2.png)
