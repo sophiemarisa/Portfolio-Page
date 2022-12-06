@@ -18,9 +18,6 @@
   .title h3{
     font-size: 40px;
   }
-  #AboutMeGrid{
-    height: 400px;
-  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -35,9 +32,6 @@
   }
   .title h3{
     font-size:25px;
-  }
-  #AboutMeGrid{
-    height: 400%;
   }
 }
 
@@ -161,7 +155,7 @@ a:hover {
   margin: 0px 5%;
   margin-top: 30px;
   display: grid;
-  height: 200px;
+  height: auto;
   grid-template-rows: 100%;
   grid-template-columns: 20% 80%;
   grid-template-areas: 
@@ -175,6 +169,7 @@ a:hover {
 
 #aboutmetext{
   grid-area: textArea;
+  display: flex;
 }
 
 .text p{
@@ -218,18 +213,23 @@ a:hover {
 #workItem1{
   grid-area: workitem1;
   background-image: url(../images/css-cheat-sheet.png);
+
 }
 #workItem2{
   grid-area: workitem2;
+  background-image: url(https://media.istockphoto.com/id/1332167985/photo/coming-soon-neon-sign-the-banner-shining-light-signboard-collection.jpg?b=1&s=170667a&w=0&k=20&c=Le4B-lJt-jXjeAOdlTQptNvN_DmRwWF19ShNc5VY4a4=);
 }
 #workItem3{
   grid-area: workitem3;
+  background-image: url(https://media.istockphoto.com/id/1332167985/photo/coming-soon-neon-sign-the-banner-shining-light-signboard-collection.jpg?b=1&s=170667a&w=0&k=20&c=Le4B-lJt-jXjeAOdlTQptNvN_DmRwWF19ShNc5VY4a4=);
 }
 #workItem4{
   grid-area: workitem4;
+  background-image: url(https://media.istockphoto.com/id/1332167985/photo/coming-soon-neon-sign-the-banner-shining-light-signboard-collection.jpg?b=1&s=170667a&w=0&k=20&c=Le4B-lJt-jXjeAOdlTQptNvN_DmRwWF19ShNc5VY4a4=);
 }
 #workItem5{
   grid-area: workitem5;
+  background-image: url(https://media.istockphoto.com/id/1332167985/photo/coming-soon-neon-sign-the-banner-shining-light-signboard-collection.jpg?b=1&s=170667a&w=0&k=20&c=Le4B-lJt-jXjeAOdlTQptNvN_DmRwWF19ShNc5VY4a4=);
 }
 
 .workItem{
